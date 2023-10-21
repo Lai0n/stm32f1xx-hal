@@ -23,7 +23,8 @@ cortex-m-rt = "0.7.1"
 nb = "1"
 stm32f1 = "0.15.1"
 embedded-dma = "0.2.0"
-bxcan = "0.7"
+#bxcan = "0.7"
+bxcan = { git = "https://github.com/lai0n/bxcan", branch = "master", features = ["can"]}
 void = { default-features = false, version = "1.0.2" }
 embedded-hal = { features = ["unproven"], version = "0.2.7" }
 fugit = "0.3.6"
